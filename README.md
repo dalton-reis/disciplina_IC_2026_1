@@ -11,11 +11,11 @@ Este é o principal material da disciplina de Introdução à Computação, e el
 
 Para se localizar em relação aos dias de aula e o conteúdo que está sendo passado utilize o arquivo [cronograma.md](cronograma.md) que se encontra na pasta raíz do nosso GitHub.
 
-## Links
+<!-- ## Links
 
 [AVA3]  
 [Aulas MS-Teams]  
-[Gravações das aulas]  
+[Gravações das aulas]   -->
 
 **IMPORTANTE**: sempre consulte o [Cronograma](cronograma.md "Cronograma") para verificar os prazos de entrega das atividades avaliativas.  
 
