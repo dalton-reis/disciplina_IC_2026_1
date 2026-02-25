@@ -9,7 +9,17 @@ Olá, seja bem vindo .. :smile:
 
 Este é o principal material da disciplina de Introdução à Computação, e ele está sendo disponibilizado no GitHub. O conteúdo está dividido em 6 (seis) unidades (pastas), seguindo o proposto no plano de ensino. Cada unidade tem material de apoio e suas respectivas atividades, dependo da unidade.
 
-Para se localizar em relação aos dias de aula e o conteúdo que está sendo passado utilize o arquivo [cronograma.md](cronograma.md) que se encontra na pasta raíz do nosso GitHub.
+Para se localizar em relação aos dias de aula e o conteúdo que está sendo passado utilize o arquivo [cronograma.md](cronograma.md) que se encontra na pasta raiz do nosso GitHub.
+
+## Rabiscos
+
+### Rabiscos - FreeForm (Apple)
+
+[disciplina_IC_aulas_Freeform](https://www.icloud.com/freeform/08bxNwzSbLjEZD7TqWDVc2IKw#disciplina_IC_aulas "disciplina_IC_aulas_Freeform")  
+
+### Rabiscos - aulaRabiscos.drawio.svg
+
+Vocês irão notar que quando preciso fazer algum rabisco eu uso o Draw.io. Para quem quiser o Draw.io pode ser instalado no Windows/MacOS/Linux, ou mesmo usando direto no navegador em: [https://app.diagrams.net/](https://app.diagrams.net/ "https://app.diagrams.net/"). Ou ainda usando uma versão com um layout de *writeboard* [https://sketch.diagrams.net/](https://sketch.diagrams.net/ "https://sketch.diagrams.net/").  
 
 <!-- ## Links
 
