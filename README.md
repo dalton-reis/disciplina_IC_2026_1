@@ -17,7 +17,7 @@ Para se localizar em relação aos dias de aula e o conteúdo que está sendo pa
 [Aulas MS-Teams]  
 [Gravações das aulas]   -->
 
-**IMPORTANTE**: sempre consulte o [Cronograma](cronograma.md "Cronograma") para verificar os prazos de entrega das atividades avaliativas.  
+<!-- **IMPORTANTE**: sempre consulte o [Cronograma](cronograma.md "Cronograma") para verificar os prazos de entrega das atividades avaliativas.   -->
 
 ## [Unidade 1](./Unidade1 "Unidade 1")  
 
