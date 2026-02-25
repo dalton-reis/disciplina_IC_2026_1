@@ -12,10 +12,10 @@ Caracterizar o aspecto de formação dirigida para o desenvolvimento científico
 
 ### Professor
 
-- [Apresentação do Professor: Dalton](https://github.com/dalton-reis/dalton-reis "Apresentação do Professor: Dalton").  
-- [Apresentação do Professora: Luciana](https://www.linkedin.com/in/luciana-pereira-de-ara%C3%BAjo-0b74b424/?originalSubdomain=br "Apresentação do Professora: Luciana").  
+- [Apresentação do Professor: Dalton](https://github.com/dalton-reis/dalton-reis "Apresentação do Professor: Dalton")  
+- [Apresentação do Professora: Luciana](https://www.linkedin.com/in/luciana-pereira-de-ara%C3%BAjo-0b74b424/?originalSubdomain=br "Apresentação do Professora: Luciana")  
 
-- Avisos: os avisos serão feitos todos pelo Teams
+- Avisos: os avisos serão feitos todos pelo AVA
 
 ### Plano de Ensino
 
