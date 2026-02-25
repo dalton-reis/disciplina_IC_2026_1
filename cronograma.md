@@ -1,4 +1,4 @@
-# Cronograma: IC (2023-2) - noturno
+# Cronograma: IC (2026-1)
 
 Local: S-415  
 Dia da semana: quintas (20:20\~22:00)  
@@ -11,24 +11,25 @@ Dia da semana: quintas (20:20\~22:00)
 
 ### Aula01 03/08/23
 
-- [x] Apresentação dos coordenadores dos cursos (BCC e SIS).  
-- [x] Apresentação da diretora do Centro (CCEN).  
-- [x] [Apresentação do Professor](https://github.com/dalton-reis/dalton-reis "Apresentação do Professor").  
-- [x] Apresentação do plano de ensino.  
-- [x] Mostrar portal acadêmico, curso no site da FURB  e biblioteca (<http://bu.furb.br/>)  
+- [ ] Apresentação dos coordenadores dos cursos (BCC e SIS).  
+- [ ] Apresentação da diretora do Centro (CCEN).  
+- [ ] [Apresentação do Professor](https://github.com/dalton-reis/dalton-reis "Apresentação do Professor").  
+- [ ] Apresentação do plano de ensino.  
+- [ ] Mostrar portal acadêmico, curso no site da FURB  e biblioteca (<http://bu.furb.br/>)  
+- [ ] Mostrar Benefícios de Tecnologia (<https://www10.furb.br/manuais/programas-de-beneficios.php>)
 
 ### Aula02 10/08/23
 
-- [x] Apresentação da turma <!-- Pandêmia ... (ligar câmera HD do PC para mostrar o aluno na sala). -->
+- [ ] Apresentação da turma <!-- Pandêmia ... (ligar câmera HD do PC para mostrar o aluno na sala). -->
     <!-- Senão tiver câmera (pode usar celular) -->
     <!-- Senão tiver microfone, escreve no Chat do Teams que eu leio -->  
     Nome, cidade, algum hobbit pessoal, se já trabalha com computação ...
-- [x] Slides_Unidade1  
+- [ ] Slides_Unidade1  
 
 ### Aula03 17/08/23
 
-- [x] Apresentação da turma (para os que não fizeram na aula anterior).  
-- [x] Slides_Unidade1  
+- [ ] Apresentação da turma (para os que não fizeram na aula anterior).  
+- [ ] Slides_Unidade1  
 
 -----------
 
@@ -36,7 +37,7 @@ Dia da semana: quintas (20:20\~22:00)
 
 ### Aula04 24/08/23
 
-- [x] Definir equipes 6 alunos.  
+- [ ] Definir equipes 6 alunos.  
 - Unidade 2: história da computação e do computador.  
 - Divisão dos grupos.  
 - Desenvolvimento do infográfico da linha do tempo da computação (em equipe, atividade avaliativa).  
@@ -128,8 +129,6 @@ Dia da semana: quintas (20:20\~22:00)
 - Fechamento da disciplina.  
 
 -----------
-
-Último dia para entregar os diários de classe 2023/2: 02/12/23 - 12/12/23
 
 <!-- 
 Ideias
