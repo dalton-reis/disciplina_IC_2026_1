@@ -109,4 +109,4 @@ O bacharel em Ciência da Computação, além do conhecimento em sistemas comput
 
 A área de atuação do bacharel em Ciência da Computação é ampla, podendo atuar na área de computação para resolver problemas computacionais propondo soluções algorítmicas e implementá-las em vários níveis de complexidade e em multiplataformas; desenvolver sistemas de computação empregando teorias, processo, métodos e ferramentas adequadas visando a qualidade de processo e produto; Desenvolver projetos de qualquer natureza em equipes multidisciplinares; Implantar Sistemas Computacionais; Gerenciar infraestrutura computacional, incluindo projeto, implantação e manutenção; Aprender contínua e autonomamente sobre métodos, instrumentos, tecnologias de infraestrutura e domínios de aplicação da computação; Desenvolver estudos avançados visando o desenvolvimento científico e tecnológico da computação e a criação de soluções computacionais inovadoras para problemas em qualquer domínio de conhecimento.  
 
-- [x] [Slides_Unidade1](./Slides_Unidade1.pdf "Slides_Unidade1")  
+- [ ] [Slides_Unidade1](./Slides_Unidade1.pdf "Slides_Unidade1")  
