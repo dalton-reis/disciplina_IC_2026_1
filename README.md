@@ -21,11 +21,7 @@ Para se localizar em relação aos dias de aula e o conteúdo que está sendo pa
 
 ## [Unidade 1](./Unidade1 "Unidade 1")  
 
-<!-- FIXME: links das disciplinas -->
-
 ## [Unidade 2](./Unidade2 "Unidade 2")  
-
-<!-- FIXME: links das disciplinas -->
 
 ## [Unidade 3](./Unidade3 "Unidade 3")  
 
@@ -34,7 +30,5 @@ Para se localizar em relação aos dias de aula e o conteúdo que está sendo pa
 ## [Unidade 5](./Unidade5 "Unidade 5")  
 
 ## [Unidade 6](./Unidade6 "Unidade 6")  
-
-## [Trabalho Final](./Unidade3 "Unidade 3")  
 
 E, se conseguirmos chegar até aqui (ainda vivos)... então boas férias 😉
