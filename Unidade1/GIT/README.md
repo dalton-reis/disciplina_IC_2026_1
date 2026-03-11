@@ -1,123 +1,243 @@
-# Material Didático: Git e GitHub – Do Básico ao Avançado
+# tecnologia_Git
 
-Este material foi estruturado para fornecer uma compreensão progressiva do controle de versão, desde a configuração inicial até fluxos de colaboração profissionais utilizando o Git (tecnologia) e o GitHub (produto).
+Material sobre versionador de código GIT.  
+Estudando Versionador de Códigos (CVS/SVN/GIT).  
 
---------------------------------------------------------------------------------
+## MarginNote
 
-## Introdução ao Controle de Versão
+<marginnote3app://note/1467C880-2120-4578-8085-B9B94313CFE2>  
 
-O Git é um Sistema de Controle de Versão Distribuído (DVCS) gratuito (pago para grande quantidade de uso) e de código aberto, projetado para lidar com projetos de todos os tamanhos com velocidade e eficiência. Ao contrário de sistemas antigos que armazenam informações como uma série de mudanças em arquivos (deltas), o Git trata os dados como um conjunto de "snapshots" (fotos) do estado do projeto em um determinado momento.
-Por que usar o Git?
+## Git (Fluxograma)
 
-- Velocidade e Eficiência: quase todas as operações são locais, o que as torna quase instantâneas.
-- Integridade: tudo no Git passa por uma soma de verificação (checksum) SHA-1 antes de ser armazenado, tornando impossível alterar arquivos sem que o sistema detecte.
-- Trabalho Offline: como você possui uma cópia completa do repositório em sua máquina, pode trabalhar sem conexão de rede e sincronizar depois.
+![IDEgit.drawio.svg](_._/IDEgit.drawio.svg "IDEgit.drawio.svg")  
 
---------------------------------------------------------------------------------
+## GIT (Controlador de Versão) - material
 
-## Configuração Inicial e Identidade
+- sobre o GIT no VSCode acesse
+  [Our top 20 tips and tricks](<https://vscode.github.com> "Our top 20 tips and tricks")  
+  [<https://code.visualstudio.com/docs/editor/versioncontrol>](<https://code.visualstudio.com/docs/editor/versioncontrol> "Sobre o GIT no VSCode")
 
-Antes de começar a usar o Git, é essencial configurar sua identidade. Essas informações são gravadas de forma imutável em cada `commit` que você cria.
+- sobre o GIT no geral
+  
+  [<https://git-scm.com>](<https://git-scm.com> "Sobre o GIT")
 
-### Comandos de Configuração Global
+- para usar o GIT
+  
+  [<https://git-scm.com/download/win>](<https://git-scm.com/download/win> "Instalar o GIT")
 
-Use o comando `git config` para definir suas preferências:
+- configure a ferramenta GIT: configure informações de usuário para todos os repositórios locais.  
+  - configura o nome que você quer ligado às suas transações de commit:
 
-| Objetivo | Comando |
-| -- | -- |
-| Definir Nome | `git config --global user.name "Seu Nome"` |
-| Definir E-mail | `git config --global user.email "seuemail@exemplo.com"` |
-| Listar Configurações | `git config --list` |
-<!-- | Definir Editor Padrão | `git config --global core.editor emacs` | -->
+    ```shell
+    git config --global user.name "[nome]"
+    ```
 
-> [!IMPORTANT]  
-> A configuração do e-mail é crucial no GitHub, pois é através dela que a plataforma mapeia seus *commits* para o seu perfil de usuário.
+  - configura o email que você quer ligado às suas transações de commit:
 
---------------------------------------------------------------------------------
+    ```shell
+    git config --global user.email "[endereco-de-email]"
+    ```
 
-## Fundamentos do Fluxo de Trabalho Local
+- folha de dicas (_cheat-sheet_)
 
-Para entender o Git, você deve dominar o conceito dos Três Estados em que um arquivo pode residir.
+  [https://training.github.com/downloads/pt_BR/github-git-cheat-sheet/](https://training.github.com/downloads/pt_BR/github-git-cheat-sheet/ "cheat-sheet")
 
-Os Três Estados e Áreas do Git:
+----
 
-- Diretório de Trabalho (Working Directory): onde você modifica os arquivos localmente.
-- Área de Preparo (Staging Area/Index): onde você marca os arquivos modificados para fazerem parte do próximo `commit`.
-- Diretório Git (History): onde o Git armazena permanentemente os snapshots no banco de dados.
+## Versionador de Códigos - GitHub
 
-Sequência Básica de Comandos:
+Existem várias opções para se versionar um código. Mas primeiro vamos entender o que seria "versionar" um código. O versionamento do código difere principalmente de um back-up (cópia de segurança) por além de duplicar os seus arquivos, também permitir um controle das alterações com um histórico associado a cada alteração.  
+Então é importante entender a "cultura" e ter o hábito de usar o versionamento. Sim, é mais fácil em vez de se preocupar em fazer todas os passos necessários para se manter um código versionado, simplesmente salvar o seu código em uma pasta de um programa que faz o sincronismo do seu código local com espaços na nuvem (ex.: DropBox, BoxNet, OneDrive, GoogleDrive etc. - lembro, alguns destes espaços permitem também ter um controle de versionamento associado a sincronização). Mas o "sincronismo" de códigos não é igual a "versionamento". No sincronismo procurasse se manter uma única versão dos seus arquivos mantendo sempre a última versão. Sem se preocupar se em registrar estas alterações para gerenciar o processo de atualização. E quando falamos em "gerenciar" é permitir ter opções de volta na linha de tempo das atualizações, comparar os ajustes feitos por várias "mãos" (usuários diferentes), marcar um momento na linha do tempo, permitir ter linhas de tempo sendo registradas em paralelo, em outras funcionalidades.  
+Sim, eu sei é muita coisa ... mas vamos com calma, um passo de cada vez. Se tens um editor de texto com milhares de funções não precisas conhecer todas as funções para começar a explorar uma poderosa ferramenta para editoração de texto para produzir os primeiros textos. Da mesma forma se pode iniciar com comandos básicos para começar a explorar a "cultura" em desenvolver código usando um versionador para controlar este processo.  
+Em resumo, o "versionamento" de código é algo mais abrangente do que "sincronizar".  
 
-- git init: cria um novo repositório Git em um diretório existente.
-- git status: mostra o estado atual dos arquivos (quais foram modificados, preparados ou não rastreados).
-- git add <arquivo>: Move as alterações do diretório de trabalho para a área de preparo.
-- git commit -m "mensagem": Grava o snapshot da área de preparo permanentemente no histórico.
+Então vamos para o **básico** dos comandos de usado para versionar códigos:  
 
-> [!TIP]
-> Boas mensagens de commit devem ser curtas (cerca de 50 caracteres), descrever a mudança no imperativo e contar a história da evolução do projeto.
+### Criar um repositório
 
---------------------------------------------------------------------------------
+Como comentei antes, existem várias opções para se versionar um código, aqui iremos usar o [GitHub](https://github.com "GitHub") (da Microsoft). O GitHub permite criar uma conta gratuitamente associando um e-mail válido. E tem planos gratuitos (com limitações) e pagos (com mais opções). Bom, a versão gratuita tem muitas funcionalidades, principalmente se optares por um repositório livre.  Ops, o que seria um repositório.  
 
-## Trabalhando com Repositórios Remotos e GitHub
+#### Conceito de repositório
 
-O GitHub é uma plataforma de colaboração construída sobre o Git, focada em facilitar o compartilhamento de código e o trabalho em equipe.
+Repositórios é o conceito utilizado para o espaço onde os arquivos/pastas versionadas são armazenadas. O repositório pode estas em uma pasta local no seu computador (Repositório Local) ou armazenado na nuvem (Repositório Remoto), por exemplo mo GitHub. E assim se pode ter vários repositórios, mas geralmente se tem um Repositório Remoto e vários Locais (em computadores diferentes, com usuários diferentes).  Mas antes vamos rapidamente entender o que seria GIT.
 
-Sincronização de Projetos:
+##### GIT x SVN x CVS
 
-- Clonagem (git clone): cria uma cópia local de um repositório remoto, incluindo todo o seu histórico.
-- Busca (git fetch): baixa os dados do servidor remoto para o seu banco de dados local, mas não mescla automaticamente com seu trabalho atual.
-- Atualização (git pull): Combina os comandos fetch e merge, baixando os dados e tentando integrá-los ao seu branch atual.
-- Envio (git push): envia seus commits locais para o servidor remoto.
+Quando se fala em "versionar" códigos vem as palavras GIT, SVN e CVS. E estas palavras decorrente da evolução com o passar do tempo, sendo o CVS uma das primeiras formas de estruturas este gerenciamento de "versionamento" de códigos, seguido pelo SVN. Apesar de ainda existir muitos códigos sendo versionados pelos CVS e SVN, iremos nos concentrar na versão mais nova, o GIT.
+Mas o que seria GIT, o GIT representa "um sistema de controle de versões distribuído". E a palavra "distribuído" é a principal parte que difere das opções mais antigas (CVS e SVN). Pois no GIT qualquer repositório pode ser sincronizado com outro repositório, sendo ele local ou remoto. Mas para não complicar iremos usar o modelo em se ter um Repositório Remoto e vários Repositórios Locais. E iremos "versionar" o código sempre entre um Repositório Local com um Repositório Remoto.  
+E aproveitando vai a regra mais importante da "cultura" de versionar código ... **Sempre, mas SEMPRE, use o "versionamento" de código para "transferir" códigos entre repositórios**.  
 
-### Fluxo de Colaboração do GitHub (GitHub Flow)
+##### Por que ter vários Repositórios Locais?
 
-Este fluxo permite experimentar ideias com segurança:
+Bom, como comentei antes, iremos "versionar" o código entre Repositórios Locais (vários) e Repositório Remoto (só um). Então, por que ter vários Repositórios Locais? Bom, o mesmo usuário pode querer ter Repositórios Locais em computadores diferentes. Ou mesmo ter dois Repositórios Locais "versionando" com o mesmo Repositório Remoto. Ou ainda, um Repositório Remoto ser "versionado" por dois (ou mais) Repositórios Locais de usuários diferentes, cada um com sua "Linha do Tempo" de desenvolvimento.  
 
-- Fork: crie sua própria cópia do projeto no seu namespace no GitHub.
-- Branch: crie um branch para suas alterações.
-- Commit: faça alterações e grave os snapshots.
-- Pull Request: abra uma solicitação para que o proprietário do projeto original revise e aceite suas mudanças.
+##### Linha do Tempo
 
---------------------------------------------------------------------------------
+Quando comentamos "Linha do Tempo" queremos referenciar todo o controle que é feito neste processo de versionamento. E cada Repositório (Local ou Remoto) tem a sua própria Linha do Tempo. Cada alteração que fizeres em seu Repositório pode ser registrada na Linha do Tempo usando o comando apropriado. E o "versionamento" se dá quando você deseja "unificar" as Linhas do Tempo" entre dois Repositórios, geralmente o seu Repositório Local com o Repositório Remoto.  
+Mas antes vamos criar um Repositório.  
 
-## Ramificações (Branches) e Integração
+### Criar um repositório - agora Sim 😀
 
-O modelo de ramificação é considerado o "recurso matador" do Git por ser incrivelmente leve e quase instantâneo.
+Primeiro iremos criar o Repositório Remoto no GitHub. Acesse [https://github.com](https://github.com "https://github.com") e crie uma conta (se já não tiver). No processo de criação da conta será pedido um nome de usuário (UserName). Se conseguir tente escolher algo que venha representar o seu portfólio de trabalhos desenvolvidos, que depois possa ser usado, por exemplo, como um dos pontos fortes do seu currículo. Eu tive sorte (pois está disponível) e optei pela forma mais simples, onde meu UserName no GitHub é **dalton-reis**. Se quiseres acessem o meu profile em: [https://github.com/dalton-reis](https://github.com/dalton-reis "https://github.com/dalton-reis").  
+Bom, com o seu usuário, e *logado* no GitHub e em <https://github.com/UserName?tab=repositories>, onde o UserName é o seu usuário, deve aparecer a aba dos Repositórios. Nesta aba aparecem os seus repositórios já criados, e também a opção (botão) "New". Clicando neste botão se tem a opção "Create a new repository", onde se deve informar o nome e se vai ser um repositório público (Public) ou privado (Private). Por enquanto opte por ser um repositório público, mas cuidado, este tipo de repositório não dá permissão para qualquer um alterar, mas dá permissão para todos verem os códigos que estão nele.  
+Bom, este repositório é o Repositório Remoto, aquele que fica persistido na  nuvem e vai ser usado para "versionarmos" os Repositórios Locais.
+O próximo passo é fazer uma copia, ou seja, "clonar" este Repositório.  
 
-Gestão de Branches:
+### Clonar Repositório
 
-- Criar Branch: `git branch <nome-da-branch>`
-- Trocar de Branch: `git checkout <nome-da-branch>`
-- Mesclar (Merge): integra o histórico de um branch em outro
+Agora é momento de criar um Repositório Local, em seu computador. Uma das formas é abrindo o VSCode sem ter nenhum projeto aberto, e na janela "Explorer" clicar no botão "Clone Repository". E em seguida informar a URL do seu Repositório Remoto, algo do tipo: <https://github.com/dalton-reis/RepositoryName>, onde RepositoryName é nome do seu Repositório Remoto. Em seguida informe a pasta onde será criada uma nova pasta com o mesmo nome do Repositório Remoto, e com todos os arquivos e pastas "clonadas" localmente.
+Nesta pasta local existe uma pasta com o nome ".git" que não deve ser usada (apaga, alterada etc.), pois é nesta pasta que é armazenada as informações de gerenciamento da "Linha do Tempo" usada no "versionamento". Também tem um arquivo chamado ".gitignore" que serve para indicar quais arquivos devem ser versionados ou não.
 
-### Comparativo de Integração: Merge vs. Rebase
+### VSCode - Source Control
 
-Existem duas formas principais de integrar mudanças entre branches:
-| Método | Funcionamento | Resultado no Histórico |
-| -- | -- | -- |
-| Merge | Realiza uma mesclagem de três vias entre os snapshots e cria um novo "commit de merge" | Preserva o histórico real de como e quando as coisas aconteceram |
-| Rebase | Pega as mudanças introduzidas em um branch e as "reaplica" no topo de outro | Cria um histórico linear, como se o trabalho tivesse ocorrido em série |
+Se estiveres no VSCode e com um projeto/pasta do Repositório Local é possível usar alguns comandos para o "versionamento". Lembrem, a pasta do Repositório Local é aquela que tem uma subpasta ".git".  
+Para usar estes comandos abra a aba "Source Control" no VSCode. Vais observar que agora aparecem ao lado direito dos nomes dos arquivos umas letras coloridas.
 
-> [!WARNING]
-> Regra de Ouro do Rebase: Nunca faça rebase de commits que você já enviou para um repositório público, pois isso reescreve a história e causará problemas para seus colaboradores.
+- U (Untracked): arquivos/pastas novas. Ainda não estão sendo gerenciadas na "Linha do Tempo";
+- A (Index Added): adicionado no Repositório Local, já aparece na Linha do Tempo, mas ainda não foi "versionado" com o Repositório Remoto;
+- M (Modified): modificado no Repositório Local;
 
---------------------------------------------------------------------------------
+Bom, aqui vale uma explicação .. que basicamente se tem dois momentos:
 
-## Recursos Avançados de Organização
+- gerenciar os arquivos no Repositório Local que se refere a manter a "linha do Tempo" no Repositório Local;
+- gerenciar o "versionamento", que consiste em "unificar" as linhas do tempo entre dois repositórios (Local e Remoto).
 
-### Tags e Releases
+#### Comando Commit
 
-As Tags são usadas para marcar pontos importantes na história, como lançamentos de versões (v1.0, v2.0):
+As indicações das letras acima se referem a gerencia dos arquivos no Repositório Local. E quando um arquivo é alterado localmente ele aparece na aba "Source Control" no grupo "Changes". Em cada arquivo "alterado" tem a opção (sinal de +) para "Stage Changes", e assim os arquivos aparecem no grupo "Staged Changes". O que permite escrever uma mensagem ("Message") para fazer um "Commit". E agora os arquivos que estavam no grupo "Staged Changes" estão com seu histórico da linha do tempo atualizada no Repositório Local. Mas observe, só foi atualizado no Repositório Local.
 
-- Anotadas: contêm o nome do autor, e-mail, data e mensagem (recomendado).
-- Leves: funcionam apenas como um ponteiro que não muda para um commit específico.
+#### Comando Pull, Push e Sync
 
-### Ignorando Arquivos com .gitignore
+Além de manter as alterações registradas na linha do tempo do Repositório Local usando o comando "Commit", se pode fazer o "versionamento" com o Repositório Remoto. E este "versionamento" e um caminho de duas vias, se podendo atualizar os códigos entre Repositório Local e Remoto, ou do Repositório Remoto com o Local. E assim se tem os comandos:
 
-Arquivos gerados automaticamente (logs, binários, configurações locais) não devem ser rastreados. Liste os padrões no arquivo .gitignore para que o Git os ignore.
+- Pull (puxar): Repositório Remoto -> Repositório Local;
+- Push (empurrar): Repositório Local -> Repositório Remoto;
+- Sync (sincronizar) Repositório Local <-> Repositório Remoto;
 
-### Atalhos (Aliases)
+### O arquivo .gitignore
 
-Você pode criar atalhos para comandos longos para aumentar a produtividade:
+O arquivo ".gitignore" não é obrigatório, e pode já ser definido no momento da "Criar um repositório". No caso existem templates prontos para definir o ".gitignore", como pode ser visto em: [https://github.com/github/gitignore](https://github.com/github/gitignore "https://github.com/github/gitignore"). O como é um arquivo de texto plano é fácil modifica-lo e entender sua definição. Na aba "Source Control" é possível marcar um arquivo/pasta como "ignorado" (usando Add to .gitignore).  
+Ou ainda, em: <https://www.toptal.com/developers/gitignore>  
 
-`git config --global alias.st status` (agora você pode usar git st).
-`git config --global alias.unstage` 'reset HEAD --'.
+### Git SubModule
+
+[git-submodule](https://git-scm.com/docs/git-submodule)  
+[stackoverflow git-submodule](https://stackoverflow.com/questions/36554810/how-to-link-folder-from-a-git-repo-to-another-repo)  
+
+  git submodule add <url>  
+  git submodule init  
+  git submodule update  
+  git submodule status
+
+  cd pasta_git_submodule  
+  git branch -a  
+  git checkout release/nome_branch  
+  git branch -a  
+
+  cd ..
+  git submodule status
+
+### Tags
+
+    git tag -a 0.0.1 -m Release: 0.0.1  
+
+No VSCode:  
+
+    Git: Create Tag
+    Git: Push (Follow Tags)
+
+### Criar Git usando Template
+
+    gh repo create tcc_XYZ --private --template=https://github.com/dalton-reis/tcc__modelo
+    cd /Users/daltonreis/GitHub/TCC
+    gh repo clone https://github.com/dalton-reis/tcc_XYZ.git
+    cd tcc_XYZ/_dalton
+    gh repo sync
+    ln -s /Users/daltonreis/GitHub/disciplinas/TCC1/disciplinaTCC1Privado/_._/OLD/2023-1/BCC/XYZ    TCC1
+    cd ~
+
+----
+
+## Git Large File Storage
+
+[git-lfs.com](https://git-lfs.com/)
+
+----
+
+## VSCode Extensões - GitFlow - mais extensões
+
+Mostra o uso de algumas extensões, entre elas o GitFlow:  
+  Original: <https://www.youtube.com/watch?v=7B6AtSMvX9k>  
+  Local: [VSCodeGIT_extensoes.mp4](_._/VSCodeGIT_extensoes.mp4 "VSCodeGIT_extensoes.mp4")  
+Indica um site que explica uma metodologia para criar Branches:  
+  Original: <https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html>  
+  Local: <marginnote3app://note/35D45FD0-0AD9-4D25-A781-E1CBDBF04EE4>
+
+### GitFlow - Passos
+
+- criar uma pasta com nome do repositório.  
+- iniciar o GitLocal:  
+    $ git init  
+- abrir VSCode na pasta do projeto.  
+- Command Palette: >GitFlow: Initialize repository for gitflow.  
+- no Branch "develop"  
+  - Command Palette: >GitFlow: Feature start.  
+    - fazer os novos ajustes.  
+  - Command Palette: >GitFlow: Feature finish.  
+      vai trazer para branch developer os ajustes, e vai "matar" branch Feature.  
+  - Command Palette: >GitFlow: Release start.  
+    - registrar informações da nova Release.  
+  - Command Palette: >GitFlow: Release finish.  
+      vai trazer para branch developer e master todos os ajustes, e vai "matar" branch Release.  
+
+Obs.: as branch Feature e Release ficam só no GitLocal, e as branch Develop e Master no GitLocal e GitRemoto.  
+
+## GitHubFork
+
+[GitHubFork](_._/GitHubFork.md "GitHubFork").  
+[GitHubChechoutRemote](_._/GitHubChechoutRemote.md "GitHubChechoutRemote").  
+
+## Git CheckOut
+
+<https://blog.betrybe.com/git/git-checkout/#1>
+
+## GIT (Gits)
+
+Gits é um recurso adicional ao [GitHub](<https://github.com>) para permitir o compartilhamento de trechos de código, notas, listas de tarefas e muito mais. Você pode salvar seus Gists como privados ou públicos. Os Gists privados são ocultados dos motores de pesquisa, mas são visíveis para qualquer pessoa com quem partilhe o URL. Por exemplo. Se você quiser escrever uma lista particular de tarefas.
+
+- Compartilhamento de códigos e notas relacionadas a disciplina de Introdução à Programação: <https://gist.github.com/dalton-reis>
+
+## GIT (Discussions)
+
+O **Discussions** é um espaço de discussões da nossa disciplina de Introdução à Programação. As discussões podem ser um lugar para nos conectarmos com outros membros da nossa disciplina. Neste espaço você pode:
+
+- Perguntar sobre assuntos que você está com dúvidas.  
+- Compartilhar ideias.  
+- Conhecer outros membros da disciplina.  
+- Dê boas-vindas aos outros e tenha a mente aberta.  
+
+Lembre-se de que esta é uma comunidade que nós construímos juntos 💪.
+
+## GitHubLearningLab
+
+Para testar o uso do: <https://github.com/marketplace/github-learning-lab>  
+Ver: <https://lab.github.com>  
+Primeiro curso: <https://lab.github.com/githubtraining/introduction-to-github?overlay=register-box-overlay>  
+
+----
+
+## Fontes
+
+<https://blog.betrybe.com/git>
+<https://blog.betrybe.com/tecnologia/comandos-git/>
+
+## Ler
+
+[ ] [git-cheat-sheet-education.pdf](_._/git-cheat-sheet-education.pdf)  
+[ ] 
+
+----
+
+## WakaTime
+
+![DashBoard](https://wakatime.com/share/@dalton_reis/bdb5b58b-d49f-4716-8757-bcf4995b4cf6.svg "DashBoard").  
