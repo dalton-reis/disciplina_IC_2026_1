@@ -9,7 +9,7 @@ Estudando Versionador de Códigos (CVS/SVN/GIT).
 
 ## Git (Fluxograma)
 
-![IDEgit.drawio.svg](_._/IDEgit.drawio.svg "IDEgit.drawio.svg")  
+![IDEgit.drawio.svg](IDEgit.drawio.svg "IDEgit.drawio.svg")  
 
 ## GIT (Controlador de Versão) - material
 
