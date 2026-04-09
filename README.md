@@ -23,7 +23,7 @@ Vocês irão notar que quando preciso fazer algum rabisco eu uso o Draw.io. Para
 
 ### FURB - Datacenter
 
-[FURB_Datacenters.pdf](Unidade1/FURB_Datacenters.pdf).  
+[FURB_Datacenters.pdf](Unidade1/FURB_Datacenters.pdf)  
 
 <!-- ## Links
 
