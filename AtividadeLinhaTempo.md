@@ -14,6 +14,7 @@ Cada grupo deve responder:
 - Qual problema existia?  
 - O que foi criado?  
 - Como evoluiu? Utilizar todos os elementos relacionados ao seu tema que constam na linha do tempo do Bloco S - 4º andar  
+ATENÇÃO: no relatório deve aparecer a imagem da parte (ou partes) da linha do tempo que foram usadas  
 - Onde aparece hoje?  
 
 ## TEMAS
