@@ -45,33 +45,33 @@ Cada grupo deve responder:
 • Cartões perfurados → HD → SSD  
 • TCP/IP, HTTP  
 
-#### Grupo 6 – Sistemas Operacionais
+### Grupo 6 – Sistemas Operacionais
 
 • UNIX, Linux, Windows  
 • Conceitos de kernel e processos  
 
-#### Grupo 7 – Web e Ferramentas
+### Grupo 7 – Web e Ferramentas
 
 • Tim Berners-Lee  
 • Web 1.0 → 2.0  
 • HTML, navegadores  
 
-#### Grupo 8 – Comunicação Digital
+### Grupo 8 – Comunicação Digital
 
 • E-mail, chats, mensageiros  
 • Evolução da comunicação  
 
-#### Grupo 9 – Comunicação (Infraestrutura)
+### Grupo 9 – Comunicação (Infraestrutura)
 
 • Redes, roteadores, cabos  
 • Funcionamento da internet  
 
-#### Grupo 10 – Histórico Local
+### Grupo 10 – Histórico Local
 
 • Empresas da região  
 • Evolução tecnológica local  
 
-#### Grupo 11 – Histórico FURB
+### Grupo 11 – Histórico FURB
 
 • Cursos, laboratórios e projetos  
 • Possível entrevista  
