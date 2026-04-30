@@ -8,6 +8,7 @@ Compreender a evolução da computação e sua relação com as tecnologias atua
 
 Grupos de 4 alunos.  
 Apresentação + Relatório: [Modelo_Relatorio_Seminario.docx](Modelo_Relatorio_Seminario.docx).  
+Postar no AVA: somente um relatório por equipe.  
 
 Cada grupo deve responder:  
 
