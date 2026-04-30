@@ -7,7 +7,7 @@ Compreender a evolução da computação e sua relação com as tecnologias atua
 ## Organização
 
 Grupos de 4 alunos
-Apresentação + Relatório
+Apresentação + Relatório: [Modelo_Relatorio_Seminario.docx](Modelo_Relatorio_Seminario.docx)
 Cada grupo deve responder:
 
 Qual problema existia?
